@@ -18,7 +18,7 @@ public class RegexProgram {
 		String samplePassword= sc.nextLine();
 
 		
-		boolean result = Pattern.matches("[a-zA-Z0-9]{8,}", samplePassword);
+		boolean result = Pattern.matches("[A-Z]{1,}[a-z]{7,}", samplePassword);
 /*
  * Printing the result
  */
