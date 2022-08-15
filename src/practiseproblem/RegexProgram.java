@@ -18,7 +18,7 @@ public class RegexProgram {
 		String samplePassword= sc.nextLine();
 
 		
-		boolean result = Pattern.matches("[A-Z]{1,}[a-z]{7,}", samplePassword);
+		boolean result = Pattern.matches("[A-Z]{1,}[a-z]{6,}[0-9]{1,}", samplePassword);
 /*
  * Printing the result
  */
