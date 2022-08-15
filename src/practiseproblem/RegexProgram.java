@@ -10,17 +10,17 @@ public class RegexProgram {
  */
 	public static void main(String[] args) {
 /*
- * Taking input from the user for last name using scanner function
+ * Taking input from the user for e-mail using scanner function
  * Defining result & pattern for the program 
  */
-		System.out.println("Enter last Name");
+		System.out.println("Enter e-mail");
 		Scanner sc = new Scanner(System.in);
-		String sampleName = sc.nextLine();
+		String sampleMail = sc.nextLine();
 
 		
-		boolean result = Pattern.matches("[A-Z]{1}[a-z]{2,}", sampleName);
+		boolean result = Pattern.matches("[a-c]{3}[.][a-z]{3}[@][b]{1}[l]{1}[.][c]{1}[o]{1}[.][a-z]{1,2}", sampleMail);
 /*
- * Printing the results
+ * Printing the result
  */
 		System.out.println("Result = " + result);
 
