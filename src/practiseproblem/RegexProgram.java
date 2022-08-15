@@ -10,15 +10,15 @@ public class RegexProgram {
  */
 	public static void main(String[] args) {
 /*
- * Taking input from the user for e-mail using scanner function
+ * Taking input from the user for mobile number using scanner function
  * Defining result & pattern for the program 
  */
-		System.out.println("Enter e-mail");
+		System.out.println("Enter a mobile number");
 		Scanner sc = new Scanner(System.in);
-		String sampleMail = sc.nextLine();
+		String sampleNumber = sc.nextLine();
 
 		
-		boolean result = Pattern.matches("[a-c]{3}[.][a-z]{3}[@][b]{1}[l]{1}[.][c]{1}[o]{1}[.][a-z]{1,2}", sampleMail);
+		boolean result = Pattern.matches("[9]{1}[1]{1}[0-9]{1,10}", sampleNumber);
 /*
  * Printing the result
  */
