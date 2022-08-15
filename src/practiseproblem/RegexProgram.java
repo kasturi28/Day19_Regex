@@ -10,15 +10,15 @@ public class RegexProgram {
  */
 	public static void main(String[] args) {
 /*
- * Taking input from the user for mobile number using scanner function
+ * Taking input from the user for password using scanner function
  * Defining result & pattern for the program 
  */
-		System.out.println("Enter a mobile number");
+		System.out.println("Enter a password");
 		Scanner sc = new Scanner(System.in);
-		String sampleNumber = sc.nextLine();
+		String samplePassword= sc.nextLine();
 
 		
-		boolean result = Pattern.matches("[9]{1}[1]{1}[0-9]{1,10}", sampleNumber);
+		boolean result = Pattern.matches("[a-zA-Z0-9]{8,}", samplePassword);
 /*
  * Printing the result
  */
